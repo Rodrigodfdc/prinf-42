@@ -4,18 +4,33 @@ CC = cc
 AR = ar rcs
 CFLAGS = -Wall -Wextra -Werror
 
-MY_SORCES =
+# Carpeta para los objetos
+OBJ_DIR = object/
 
+MY_SOURCES = \
+ft_printf.c \
+ft_putstr.c \
+ft_putchar.c  \
+ft_puthex_upper.c\ 
+ft_puthex.c \
+ft_putptr.c \
+ft_putunsigned.c
 
 $(NAME): $(MY_OBJECTS)
 
-MY_OBJECTS = $(MY_SORCES: .c= .o)
+# 3. Objetos (ahora apuntan a la carpeta object/)
+MY_OBJECTS = $(addprefix $(OBJ_DIR), $(MY_SOURCES:.c=.o))
 
 all: $(NAME)
 
-%.o: %.c 
+# Crear la librería
+$(NAME): $(MY_OBJECTS)
 	$(AR) $(NAME) $(MY_OBJECTS)
-	chmod 755 $(NAME)
+
+# Regla para compilar los .c en .o dentro de la carpeta object/
+$(OBJ_DIR)%.o: %.c
+	@mkdir -p $(OBJ_DIR)
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clear:
 	rm -f $(MY_OBJECTS)
@@ -26,4 +41,3 @@ fclean: clean
 re: fclean all
 
 .PHONY: all clean fclean re
-1
