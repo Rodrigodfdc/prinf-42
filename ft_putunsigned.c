@@ -2,7 +2,7 @@
 
 unsigned int	ft_putunsigned(unsigned int n)
 {
-	int count;
+	int	count;
 
 	count = 0;
 	if (n >= 10)

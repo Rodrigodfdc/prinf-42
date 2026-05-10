@@ -39,7 +39,7 @@ size_t	ft_printf(const char *str, ...)
 			count += format(*str, args);
 		}
 		else
-			count += ft_putchat(*str);
+			count += ft_putchar(*str);
 		str++;
 	}
 	va_end(args);
