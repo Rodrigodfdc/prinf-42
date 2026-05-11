@@ -6,7 +6,7 @@
 /*   By: rodde-fr <rodde-fr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/11 17:16:12 by rodde-fr          #+#    #+#             */
-/*   Updated: 2026/05/11 17:19:16 by rodde-fr         ###   ########.fr       */
+/*   Updated: 2026/05/11 18:23:48 by rodde-fr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_putptr(void *ptr)
 {
-	int count;
+	int		count;
 
 	count = 0;
 	if (ptr == NULL)

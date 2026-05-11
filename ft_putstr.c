@@ -6,7 +6,7 @@
 /*   By: rodde-fr <rodde-fr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/11 17:17:11 by rodde-fr          #+#    #+#             */
-/*   Updated: 2026/05/11 17:19:09 by rodde-fr         ###   ########.fr       */
+/*   Updated: 2026/05/11 18:23:57 by rodde-fr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_putstr(char *s)
 {
-	int count;
+	int		count;
 
 	count = 0;
 	if (!s)

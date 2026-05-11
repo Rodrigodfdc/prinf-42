@@ -6,7 +6,7 @@
 /*   By: rodde-fr <rodde-fr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/11 17:16:56 by rodde-fr          #+#    #+#             */
-/*   Updated: 2026/05/11 17:19:23 by rodde-fr         ###   ########.fr       */
+/*   Updated: 2026/05/11 18:36:47 by rodde-fr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_putnbr(int n)
 {
-	int count;
+	int		count;
 
 	count = 0;
 	if (n == -2147483648)
@@ -22,7 +22,6 @@ int	ft_putnbr(int n)
 		ft_putstr("-2147483648");
 		return (11);
 	}
-
 	if (n < 0)
 	{
 		count += ft_putchar('-');
@@ -33,4 +32,3 @@ int	ft_putnbr(int n)
 	count += ft_putchar((n % 10) + '0');
 	return (count);
 }
-
