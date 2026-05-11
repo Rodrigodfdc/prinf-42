@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rodde-fr <rodde-fr@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/05/11 17:16:34 by rodde-fr          #+#    #+#             */
+/*   Updated: 2026/05/11 17:16:35 by rodde-fr         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
@@ -7,7 +19,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 
-size_t			ft_printf(const char *format, ...);
+int				ft_printf(const char *format, ...);
 int				ft_putchar(char c);
 int				ft_putstr(char *str);
 int				ft_putnbr(int n);

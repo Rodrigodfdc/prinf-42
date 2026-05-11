@@ -1,9 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_puthex_upper.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rodde-fr <rodde-fr@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/05/11 17:16:46 by rodde-fr          #+#    #+#             */
+/*   Updated: 2026/05/11 17:19:52 by rodde-fr         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_printf.h"
 
 int	ft_puthex_upper(unsigned long n)
 {
-	int count;
-	char *base;
+	int		count;
+	char	*base;
 
 	count = 0;
 	base = "0123456789ABCDEF";

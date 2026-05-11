@@ -29,6 +29,16 @@ $(NAME): $(MY_OBJECTS)
 	$(AR) $(NAME) $(MY_OBJECTS)
 	chmod 755 $(NAME)
 
+.PHONY: all clean fclean re
+
+clean:
+    rm -rf $(OBJ_DIR)
+
+fclean: clean
+    rm -f $(NAME)
+
+re: fclean all
+
 clean:
 	rm -rf $(OBJ_DIR)
 

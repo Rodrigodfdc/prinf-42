@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_printf.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rodde-fr <rodde-fr@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/05/11 17:16:21 by rodde-fr          #+#    #+#             */
+/*   Updated: 2026/05/11 17:20:23 by rodde-fr         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_printf.h"
 
 static size_t	format(const char type, va_list args)
@@ -24,10 +36,10 @@ static size_t	format(const char type, va_list args)
 	return (count);
 }
 
-size_t	ft_printf(const char *str, ...)
+int	ft_printf(const char *str, ...)
 {
-	va_list args;
-	size_t count;
+	va_list		args;
+	size_t		count;
 
 	count = 0;
 	va_start(args, str);
